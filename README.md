@@ -309,19 +309,6 @@ cd backend && npm start
 cd frontend && npm run build
 ```
 
-### Environment Variables
-Create `.env` files in both backend and frontend directories:
-
-**Backend (.env):**
-```
-PORT=3001
-FRONTEND_URL=http://localhost:3000
-```
-
-**Frontend (.env):**
-```
-VITE_API_URL=http://localhost:3001/api
-```
 
 ## 🚀 Future Enhancements
 
@@ -337,19 +324,6 @@ VITE_API_URL=http://localhost:3001/api
 - [ ] Calendar integration
 - [ ] Export functionality (PDF, Excel)
 
-### Low Priority
-- [ ] Mobile app (React Native)
-- [ ] Advanced analytics dashboard
-- [ ] Email notifications
-- [ ] API rate limiting per user
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ### Code Style Guidelines
 - Use functional components with hooks
@@ -357,10 +331,6 @@ VITE_API_URL=http://localhost:3001/api
 - Write clear, descriptive commit messages
 - Add tests for new features
 - Update documentation as needed
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🆘 Troubleshooting
 
@@ -378,22 +348,8 @@ npx kill-port 3001
 cd backend && npm run init-db
 ```
 
-**CORS errors:**
-- Ensure backend is running on port 3001
-- Check frontend proxy configuration in `vite.config.js`
-
 **Build errors:**
 - Clear node_modules and reinstall: `rm -rf node_modules package-lock.json && npm install`
 - Check Node.js version: `node --version` (requires v16+)
 
-### Getting Help
 
-1. Check the console for error messages
-2. Verify both backend and frontend are running
-3. Check network requests in browser dev tools
-4. Review this README for setup instructions
-5. Open an issue on GitHub with detailed error information
-
----
-
-**Built with ❤️ using modern web technologies**
